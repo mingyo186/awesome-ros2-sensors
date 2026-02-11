@@ -107,7 +107,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
-| **MQ-2** | Gas (LPG/Smoke) | Analog | ❌ | — | Needs ADC |
+| **MQ-2** | Gas (LPG/Smoke) | Analog | ✅ | [mingyo186/mq2_gas](https://github.com/mingyo186/mq2_gas) | Jazzy, Python, ADS1115 ADC, Rs/R0 + PPM, fake_mode |
 | **MQ-135** | Air Quality | Analog | ❌ | — | Needs ADC |
 | **CCS811** | eCO2/TVOC | I2C | ❌ | — | Digital output |
 | **SGP30** | eCO2/TVOC | I2C | ❌ | — | — |
@@ -149,13 +149,13 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Light / Color | 5 | 5 | 0 | 0 |
 | Magnetometer | 4 | 4 | 0 | 0 |
 | ADC / DAC | 5 | 5 | 0 | 0 |
-| Gas / Air Quality | 5 | 0 | 0 | 5 |
+| Gas / Air Quality | 5 | 1 | 0 | 4 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **34 (68%)** | **3 (6%)** | **13 (26%)** |
+| **Total** | **50** | **35 (70%)** | **3 (6%)** | **12 (24%)** |
 
-> **26% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **24% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
