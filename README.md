@@ -55,7 +55,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 |--------|------|-----------|------|------|-------|
 | **BMP280** | Pressure/Temp | I2C/SPI | ✅ | [mingyo186/bmp280_barometer](https://github.com/mingyo186/bmp280_barometer) | Jazzy, Python, FluidPressure + Temperature, fake_mode |
 | **BME280** | Pressure/Temp/Humidity | I2C/SPI | ✅ | [mingyo186/bme280_env](https://github.com/mingyo186/bme280_env) | Jazzy, Python, FluidPressure + Temperature + RelativeHumidity, fake_mode |
-| **BME680** | Pressure/Temp/Humidity/Gas | I2C/SPI | ❌ | — | + VOC air quality |
+| **BME680** | Pressure/Temp/Humidity/Gas | I2C/SPI | ✅ | [mingyo186/bme680_env](https://github.com/mingyo186/bme680_env) | Jazzy, Python, FluidPressure + Temperature + RelativeHumidity + gas resistance, fake_mode |
 | **DHT11** | Temp/Humidity | GPIO | ❌ | — | Low accuracy |
 | **DHT22** | Temp/Humidity | GPIO | ❌ | — | Better accuracy than DHT11 |
 | **SHT31** | Temp/Humidity | I2C | ❌ | — | High precision |
@@ -144,7 +144,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
 | IMU / Motion | 7 | 6 | 0 | 1 |
-| Environment | 8 | 2 | 0 | 6 |
+| Environment | 8 | 3 | 0 | 5 |
 | Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **14 (28%)** | **3 (6%)** | **33 (66%)** |
+| **Total** | **50** | **15 (30%)** | **3 (6%)** | **32 (64%)** |
 
-> **66% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **64% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
