@@ -81,7 +81,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **BH1750** | Ambient Light | I2C | ✅ | [mingyo186/bh1750_light](https://github.com/mingyo186/bh1750_light) | Jazzy, Python, high/high2/low modes, fake_mode |
 | **TSL2561** | Light/IR | I2C | ✅ | [mingyo186/tsl2561_light](https://github.com/mingyo186/tsl2561_light) | Jazzy, Python, dual-channel lux, gain/integration, fake_mode |
 | **TCS34725** | RGB Color | I2C | ✅ | [mingyo186/tcs34725_color](https://github.com/mingyo186/tcs34725_color) | Jazzy, Python, RGBC 4-channel, IR filter, DN40 lux, fake_mode |
-| **APDS-9960** | Gesture/Proximity/Color | I2C | ❌ | — | Multi-function |
+| **APDS-9960** | Gesture/Proximity/Color | I2C | ✅ | [mingyo186/apds9960_sensor](https://github.com/mingyo186/apds9960_sensor) | Jazzy, Python, proximity+RGBC+lux, fake_mode |
 | **VEML7700** | Ambient Light | I2C | ❌ | — | High accuracy lux |
 
 ## Magnetometer / Compass
@@ -146,16 +146,16 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | IMU / Motion | 7 | 6 | 0 | 1 |
 | Environment | 8 | 8 | 0 | 0 |
 | Distance / Proximity | 7 | 6 | 1 | 0 |
-| Light / Color | 5 | 3 | 0 | 2 |
+| Light / Color | 5 | 4 | 0 | 1 |
 | Magnetometer | 4 | 1 | 0 | 3 |
 | ADC / DAC | 5 | 1 | 0 | 4 |
 | Gas / Air Quality | 5 | 0 | 0 | 5 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **25 (50%)** | **3 (6%)** | **22 (44%)** |
+| **Total** | **50** | **26 (52%)** | **3 (6%)** | **21 (42%)** |
 
-> **44% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **42% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
