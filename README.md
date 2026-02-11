@@ -57,7 +57,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **BME280** | Pressure/Temp/Humidity | I2C/SPI | ✅ | [mingyo186/bme280_env](https://github.com/mingyo186/bme280_env) | Jazzy, Python, FluidPressure + Temperature + RelativeHumidity, fake_mode |
 | **BME680** | Pressure/Temp/Humidity/Gas | I2C/SPI | ✅ | [mingyo186/bme680_env](https://github.com/mingyo186/bme680_env) | Jazzy, Python, FluidPressure + Temperature + RelativeHumidity + gas resistance, fake_mode |
 | **DHT11** | Temp/Humidity | GPIO | ✅ | [mingyo186/dht11_env](https://github.com/mingyo186/dht11_env) | Jazzy, Python, GPIO, adafruit_dht, fake_mode |
-| **DHT22** | Temp/Humidity | GPIO | ❌ | — | Better accuracy than DHT11 |
+| **DHT22** | Temp/Humidity | GPIO | ✅ | [mingyo186/dht22_env](https://github.com/mingyo186/dht22_env) | Jazzy, Python, GPIO, ±0.5°C accuracy, fake_mode |
 | **SHT31** | Temp/Humidity | I2C | ❌ | — | High precision |
 | **DS18B20** | Temperature | 1-Wire | ❌ | — | Waterproof probe available |
 | **TMP102** | Temperature | I2C | ❌ | — | ±0.5°C accuracy |
@@ -144,7 +144,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
 | IMU / Motion | 7 | 6 | 0 | 1 |
-| Environment | 8 | 4 | 0 | 4 |
+| Environment | 8 | 5 | 0 | 3 |
 | Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **16 (32%)** | **3 (6%)** | **31 (62%)** |
+| **Total** | **50** | **17 (34%)** | **3 (6%)** | **30 (60%)** |
 
-> **62% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **60% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
