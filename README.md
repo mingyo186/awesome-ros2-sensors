@@ -47,7 +47,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **ICM-20948** | 9-axis IMU | I2C/SPI | ✅ | [mingyo186/icm20948_imu](https://github.com/mingyo186/icm20948_imu) | Jazzy, Python, accel+gyro+AK09916 mag, fake_mode |
 | **BNO055** | 9-axis AHRS | I2C | ✅ | [mingyo186/bno055_imu](https://github.com/mingyo186/bno055_imu) | Jazzy, Python, NDOF/IMU/Compass modes, fake_mode |
 | **ADXL345** | 3-axis Accel | I2C/SPI | ✅ | [mingyo186/adxl345_accel](https://github.com/mingyo186/adxl345_accel) | Jazzy, Python, ±2/4/8/16g, full resolution, fake_mode |
-| **LSM6DS3** | 6-axis IMU | I2C/SPI | ❌ | — | — |
+| **LSM6DS3** | 6-axis IMU | I2C/SPI | ✅ | [mingyo186/lsm6ds3_imu](https://github.com/mingyo186/lsm6ds3_imu) | Jazzy, Python, accel+gyro, BDU, fake_mode |
 
 ## Environment
 
@@ -143,7 +143,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
-| IMU / Motion | 7 | 5 | 0 | 2 |
+| IMU / Motion | 7 | 6 | 0 | 1 |
 | Environment | 8 | 2 | 0 | 6 |
 | Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **13 (26%)** | **3 (6%)** | **34 (68%)** |
+| **Total** | **50** | **14 (28%)** | **3 (6%)** | **33 (66%)** |
 
-> **68% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **66% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
