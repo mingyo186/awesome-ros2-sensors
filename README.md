@@ -101,7 +101,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **ADS1015** | 12-bit ADC | I2C | ✅ | [mingyo186/ads1015_adc](https://github.com/mingyo186/ads1015_adc) | Jazzy, Python, 4-ch, 128-3300 SPS, PGA, ADS1115 sibling, fake_mode |
 | **MCP3008** | 10-bit ADC | SPI | ✅ | [mingyo186/mcp3008_adc](https://github.com/mingyo186/mcp3008_adc) | Jazzy, Python, 8-ch, SPI, configurable Vref, fake_mode |
 | **MCP4725** | 12-bit DAC | I2C | ✅ | [mingyo186/mcp4725_dac](https://github.com/mingyo186/mcp4725_dac) | Jazzy, Python, command/feedback, EEPROM, fast write, fake_mode |
-| **PCF8591** | 8-bit ADC+DAC | I2C | ❌ | — | 4 ADC + 1 DAC |
+| **PCF8591** | 8-bit ADC+DAC | I2C | ✅ | [mingyo186/pcf8591_adc_dac](https://github.com/mingyo186/pcf8591_adc_dac) | Jazzy, Python, 4-ch ADC + 1-ch DAC combo, fake_mode |
 
 ## Gas / Air Quality
 
@@ -148,14 +148,14 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Distance / Proximity | 7 | 6 | 1 | 0 |
 | Light / Color | 5 | 5 | 0 | 0 |
 | Magnetometer | 4 | 4 | 0 | 0 |
-| ADC / DAC | 5 | 4 | 0 | 1 |
+| ADC / DAC | 5 | 5 | 0 | 0 |
 | Gas / Air Quality | 5 | 0 | 0 | 5 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **33 (66%)** | **3 (6%)** | **14 (28%)** |
+| **Total** | **50** | **34 (68%)** | **3 (6%)** | **13 (26%)** |
 
-> **28% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **26% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
