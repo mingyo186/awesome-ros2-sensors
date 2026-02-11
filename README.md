@@ -98,7 +98,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
 | **ADS1115** | 16-bit ADC | I2C | ✅ | [mingyo186/ads1115_adc](https://github.com/mingyo186/ads1115_adc) | Jazzy, Python, 4-ch, PGA configurable, fake_mode |
-| **ADS1015** | 12-bit ADC | I2C | ❌ | — | Faster, lower resolution |
+| **ADS1015** | 12-bit ADC | I2C | ✅ | [mingyo186/ads1015_adc](https://github.com/mingyo186/ads1015_adc) | Jazzy, Python, 4-ch, 128-3300 SPS, PGA, ADS1115 sibling, fake_mode |
 | **MCP3008** | 10-bit ADC | SPI | ❌ | — | 8 channels |
 | **MCP4725** | 12-bit DAC | I2C | ❌ | — | Single channel |
 | **PCF8591** | 8-bit ADC+DAC | I2C | ❌ | — | 4 ADC + 1 DAC |
@@ -148,14 +148,14 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Distance / Proximity | 7 | 6 | 1 | 0 |
 | Light / Color | 5 | 5 | 0 | 0 |
 | Magnetometer | 4 | 4 | 0 | 0 |
-| ADC / DAC | 5 | 1 | 0 | 4 |
+| ADC / DAC | 5 | 2 | 0 | 3 |
 | Gas / Air Quality | 5 | 0 | 0 | 5 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **30 (60%)** | **3 (6%)** | **17 (34%)** |
+| **Total** | **50** | **31 (62%)** | **3 (6%)** | **16 (32%)** |
 
-> **34% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **32% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
