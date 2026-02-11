@@ -44,7 +44,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **MPU6050** | 6-axis IMU | I2C | ✅ | [mingyo186/mpu6050_imu](https://github.com/mingyo186/mpu6050_imu) | Jazzy, Python, fake_mode for testing |
 | **MPU9250** | 9-axis IMU | I2C/SPI | ✅ | [hiwad-aziz/ros2_mpu9250_driver](https://github.com/hiwad-aziz/ros2_mpu9250_driver) | C++, auto-calibration |
 | **MPU9250** | 9-axis IMU | I2C | ✅ | [schnili/mpu9250](https://github.com/schnili/mpu9250) | Python wrapper |
-| **ICM-20948** | 9-axis IMU | I2C/SPI | ❌ | — | Successor to MPU9250 |
+| **ICM-20948** | 9-axis IMU | I2C/SPI | ✅ | [mingyo186/icm20948_imu](https://github.com/mingyo186/icm20948_imu) | Jazzy, Python, accel+gyro+AK09916 mag, fake_mode |
 | **BNO055** | 9-axis AHRS | I2C | ✅ | [mingyo186/bno055_imu](https://github.com/mingyo186/bno055_imu) | Jazzy, Python, NDOF/IMU/Compass modes, fake_mode |
 | **ADXL345** | 3-axis Accel | I2C/SPI | ❌ | — | — |
 | **LSM6DS3** | 6-axis IMU | I2C/SPI | ❌ | — | — |
@@ -54,7 +54,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
 | **BMP280** | Pressure/Temp | I2C/SPI | ✅ | [mingyo186/bmp280_barometer](https://github.com/mingyo186/bmp280_barometer) | Jazzy, Python, FluidPressure + Temperature, fake_mode |
-| **BME280** | Pressure/Temp/Humidity | I2C/SPI | ❌ | — | BMP280 + humidity |
+| **BME280** | Pressure/Temp/Humidity | I2C/SPI | ✅ | [mingyo186/bme280_env](https://github.com/mingyo186/bme280_env) | Jazzy, Python, FluidPressure + Temperature + RelativeHumidity, fake_mode |
 | **BME680** | Pressure/Temp/Humidity/Gas | I2C/SPI | ❌ | — | + VOC air quality |
 | **DHT11** | Temp/Humidity | GPIO | ❌ | — | Low accuracy |
 | **DHT22** | Temp/Humidity | GPIO | ❌ | — | Better accuracy than DHT11 |
@@ -144,7 +144,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
 | IMU / Motion | 7 | 4 | 0 | 3 |
-| Environment | 8 | 1 | 0 | 7 |
+| Environment | 8 | 2 | 0 | 6 |
 | Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **11 (22%)** | **3 (6%)** | **36 (72%)** |
+| **Total** | **50** | **12 (24%)** | **3 (6%)** | **35 (70%)** |
 
-> **72% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **70% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
