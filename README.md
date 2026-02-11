@@ -71,7 +71,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **VL53L1X** | ToF Laser | I2C | ✅ | [slaghuis/ROS2-VL53L1X](https://github.com/slaghuis/ROS2-VL53L1X) | sensor_msgs/Range |
 | **VL53L5CX** | ToF Array (8×8) | I2C | ✅ | [adityakamath/tof_imager_ros](https://github.com/adityakamath/tof_imager_ros) | Lifecycle node, Humble |
 | **TFMini** | LiDAR | UART | ⚠️ | — | ROS1 drivers exist |
-| **GP2Y0A21** | IR Distance | Analog | ❌ | — | Needs ADC |
+| **GP2Y0A21** | IR Distance | Analog | ✅ | [mingyo186/gp2y0a21_range](https://github.com/mingyo186/gp2y0a21_range) | Jazzy, Python, ADS1115 ADC, 10-80cm, fake_mode |
 | **RCWL-1601** | Ultrasonic | GPIO | ❌ | — | HC-SR04 alternative |
 
 ## Light / Color
@@ -145,7 +145,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 |----------|--------------|---------|--------------|--------|
 | IMU / Motion | 7 | 6 | 0 | 1 |
 | Environment | 8 | 8 | 0 | 0 |
-| Distance / Proximity | 7 | 4 | 1 | 2 |
+| Distance / Proximity | 7 | 5 | 1 | 1 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
 | ADC / DAC | 5 | 1 | 0 | 4 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **20 (40%)** | **3 (6%)** | **27 (54%)** |
+| **Total** | **50** | **21 (42%)** | **3 (6%)** | **26 (52%)** |
 
-> **54% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **52% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
