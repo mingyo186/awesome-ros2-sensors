@@ -45,7 +45,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **MPU9250** | 9-axis IMU | I2C/SPI | ✅ | [hiwad-aziz/ros2_mpu9250_driver](https://github.com/hiwad-aziz/ros2_mpu9250_driver) | C++, auto-calibration |
 | **MPU9250** | 9-axis IMU | I2C | ✅ | [schnili/mpu9250](https://github.com/schnili/mpu9250) | Python wrapper |
 | **ICM-20948** | 9-axis IMU | I2C/SPI | ❌ | — | Successor to MPU9250 |
-| **BNO055** | 9-axis AHRS | I2C | ⚠️ | — | Built-in sensor fusion, ROS1 only |
+| **BNO055** | 9-axis AHRS | I2C | ✅ | [mingyo186/bno055_imu](https://github.com/mingyo186/bno055_imu) | Jazzy, Python, NDOF/IMU/Compass modes, fake_mode |
 | **ADXL345** | 3-axis Accel | I2C/SPI | ❌ | — | — |
 | **LSM6DS3** | 6-axis IMU | I2C/SPI | ❌ | — | — |
 
@@ -53,7 +53,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
-| **BMP280** | Pressure/Temp | I2C/SPI | ❌ | — | Barometric pressure + altitude |
+| **BMP280** | Pressure/Temp | I2C/SPI | ✅ | [mingyo186/bmp280_barometer](https://github.com/mingyo186/bmp280_barometer) | Jazzy, Python, FluidPressure + Temperature, fake_mode |
 | **BME280** | Pressure/Temp/Humidity | I2C/SPI | ❌ | — | BMP280 + humidity |
 | **BME680** | Pressure/Temp/Humidity/Gas | I2C/SPI | ❌ | — | + VOC air quality |
 | **DHT11** | Temp/Humidity | GPIO | ❌ | — | Low accuracy |
@@ -67,7 +67,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
 | **HC-SR04** | Ultrasonic | GPIO | ✅ | [mataruzz/libHCSR04](https://github.com/mataruzz/libHCSR04) | With ROS2 wrapper |
-| **VL53L0X** | ToF Laser | I2C | ⚠️ | [Andrew-rw/vl53l0x_driver](https://github.com/Andrew-rw/vl53l0x_driver) | ROS1 only |
+| **VL53L0X** | ToF Laser | I2C | ✅ | [mingyo186/vl53l0x_range](https://github.com/mingyo186/vl53l0x_range) | Jazzy, Python, short/medium/long modes, fake_mode |
 | **VL53L1X** | ToF Laser | I2C | ✅ | [slaghuis/ROS2-VL53L1X](https://github.com/slaghuis/ROS2-VL53L1X) | sensor_msgs/Range |
 | **VL53L5CX** | ToF Array (8×8) | I2C | ✅ | [adityakamath/tof_imager_ros](https://github.com/adityakamath/tof_imager_ros) | Lifecycle node, Humble |
 | **TFMini** | LiDAR | UART | ⚠️ | — | ROS1 drivers exist |
@@ -88,7 +88,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
-| **HMC5883L** | 3-axis Mag | I2C | ✅ | [GitHub](https://github.com/topics/hmc5883l) | Publishes /imu/mag |
+| **HMC5883L** | 3-axis Mag | I2C | ✅ | [mingyo186/hmc5883l_compass](https://github.com/mingyo186/hmc5883l_compass) | Jazzy, Python, hard-iron calibration, fake_mode |
 | **QMC5883L** | 3-axis Mag | I2C | ❌ | — | HMC5883L clone |
 | **LIS3MDL** | 3-axis Mag | I2C/SPI | ❌ | — | ±4/8/12/16 gauss |
 | **MMC5603** | 3-axis Mag | I2C | ❌ | — | — |
@@ -97,7 +97,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Sensor | Type | Interface | ROS2 | Link | Notes |
 |--------|------|-----------|------|------|-------|
-| **ADS1115** | 16-bit ADC | I2C | ❌ | — | 4-ch, programmable gain |
+| **ADS1115** | 16-bit ADC | I2C | ✅ | [mingyo186/ads1115_adc](https://github.com/mingyo186/ads1115_adc) | Jazzy, Python, 4-ch, PGA configurable, fake_mode |
 | **ADS1015** | 12-bit ADC | I2C | ❌ | — | Faster, lower resolution |
 | **MCP3008** | 10-bit ADC | SPI | ❌ | — | 8 channels |
 | **MCP4725** | 12-bit DAC | I2C | ❌ | — | Single channel |
@@ -143,19 +143,19 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
-| IMU / Motion | 7 | 3 | 1 | 3 |
-| Environment | 8 | 0 | 0 | 8 |
-| Distance / Proximity | 7 | 3 | 2 | 2 |
+| IMU / Motion | 7 | 4 | 0 | 3 |
+| Environment | 8 | 1 | 0 | 7 |
+| Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
-| ADC / DAC | 5 | 0 | 0 | 5 |
+| ADC / DAC | 5 | 1 | 0 | 4 |
 | Gas / Air Quality | 5 | 0 | 0 | 5 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **7 (14%)** | **5 (10%)** | **38 (76%)** |
+| **Total** | **50** | **11 (22%)** | **3 (6%)** | **36 (72%)** |
 
-> **76% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **72% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
