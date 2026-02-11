@@ -60,7 +60,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | **DHT22** | Temp/Humidity | GPIO | ✅ | [mingyo186/dht22_env](https://github.com/mingyo186/dht22_env) | Jazzy, Python, GPIO, ±0.5°C accuracy, fake_mode |
 | **SHT31** | Temp/Humidity | I2C | ✅ | [mingyo186/sht31_env](https://github.com/mingyo186/sht31_env) | Jazzy, Python, ±0.2°C accuracy, CRC-8, fake_mode |
 | **DS18B20** | Temperature | 1-Wire | ✅ | [mingyo186/ds18b20_temp](https://github.com/mingyo186/ds18b20_temp) | Jazzy, Python, 9-12 bit resolution, waterproof, fake_mode |
-| **TMP102** | Temperature | I2C | ❌ | — | ±0.5°C accuracy |
+| **TMP102** | Temperature | I2C | ✅ | [mingyo186/tmp102_temp](https://github.com/mingyo186/tmp102_temp) | Jazzy, Python, 12/13-bit, ultra-low power 10µA, fake_mode |
 
 ## Distance / Proximity
 
@@ -144,7 +144,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Category | Total Sensors | ✅ ROS2 | ⚠️ ROS1 Only | ❌ None |
 |----------|--------------|---------|--------------|--------|
 | IMU / Motion | 7 | 6 | 0 | 1 |
-| Environment | 8 | 7 | 0 | 1 |
+| Environment | 8 | 8 | 0 | 0 |
 | Distance / Proximity | 7 | 4 | 1 | 2 |
 | Light / Color | 5 | 0 | 0 | 5 |
 | Magnetometer | 4 | 1 | 0 | 3 |
@@ -153,9 +153,9 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **19 (38%)** | **3 (6%)** | **28 (56%)** |
+| **Total** | **50** | **20 (40%)** | **3 (6%)** | **27 (54%)** |
 
-> **56% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **54% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
