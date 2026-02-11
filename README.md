@@ -90,7 +90,7 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 |--------|------|-----------|------|------|-------|
 | **HMC5883L** | 3-axis Mag | I2C | ✅ | [mingyo186/hmc5883l_compass](https://github.com/mingyo186/hmc5883l_compass) | Jazzy, Python, hard-iron calibration, fake_mode |
 | **QMC5883L** | 3-axis Mag | I2C | ✅ | [mingyo186/qmc5883l_compass](https://github.com/mingyo186/qmc5883l_compass) | Jazzy, Python, ±2G/±8G, ODR 10-200Hz, HMC5883L replacement, fake_mode |
-| **LIS3MDL** | 3-axis Mag | I2C/SPI | ❌ | — | ±4/8/12/16 gauss |
+| **LIS3MDL** | 3-axis Mag | I2C/SPI | ✅ | [mingyo186/lis3mdl_compass](https://github.com/mingyo186/lis3mdl_compass) | Jazzy, Python, ±4/8/12/16G, ultra-high perf, BDU, fake_mode |
 | **MMC5603** | 3-axis Mag | I2C | ❌ | — | — |
 
 ## ADC / DAC
@@ -147,15 +147,15 @@ Most "awesome ROS2" lists focus on industrial sensors. This list fills the gap f
 | Environment | 8 | 8 | 0 | 0 |
 | Distance / Proximity | 7 | 6 | 1 | 0 |
 | Light / Color | 5 | 5 | 0 | 0 |
-| Magnetometer | 4 | 2 | 0 | 2 |
+| Magnetometer | 4 | 3 | 0 | 1 |
 | ADC / DAC | 5 | 1 | 0 | 4 |
 | Gas / Air Quality | 5 | 0 | 0 | 5 |
 | Heart Rate / SpO2 | 2 | 0 | 0 | 2 |
 | GPS / GNSS | 4 | 0 | 2 | 2 |
 | Current / Power | 3 | 0 | 0 | 3 |
-| **Total** | **50** | **28 (56%)** | **3 (6%)** | **19 (38%)** |
+| **Total** | **50** | **29 (58%)** | **3 (6%)** | **18 (36%)** |
 
-> **38% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
+> **36% of common maker sensors have NO ROS2 driver.** This is a massive opportunity for the community.
 
 ---
 
